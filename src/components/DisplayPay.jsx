@@ -26,30 +26,51 @@ function DisplayPay({ user }) {
       <div className="displaypay-delivery">
         <h3>Delivery information</h3>
         <div>
-          <input type="text" placeholder="First name" required />
+          <label htmlFor="">
+            Name
+            <input type="text" placeholder="First name" required />
+          </label>
+          <label htmlFor="">
+            -
+            <input
+              className="lastname"
+              type="text"
+              placeholder="Last name"
+              required
+            />
+          </label>
+        </div>
+        <label>
+          Email adress
+          <input type="email" placeholder="hi@you.com" required />
+        </label>
+        <label>
+          Phone number
           <input
-            className="lastname"
-            type="text"
-            placeholder="Last name"
+            onBlur={(e) => setTel(e.target.value)}
+            type="tel"
+            pattern="[0-9]{4}-[0-9]{6}"
+            placeholder="XXXX-XXXXXX"
             required
           />
-        </div>
-        <input type="email" placeholder="Email adress" required />
-        <input
-          onBlur={(e) => setTel(e.target.value)}
-          type="tel"
-          pattern="[0-9]{4}-[0-9]{6}"
-          placeholder="Phone number"
-          required
-        />
+        </label>
       </div>
       <div className="displaypay-delivery">
-        <input type="text" placeholder="Street" required />
+        <label>
+          Street
+          <input type="text" placeholder="" required />
+        </label>
       </div>
       <div className="displaypay-delivery city">
         <div>
-          <input type="text" placeholder="Zip code" required />
-          <input className="lastname" type="text" placeholder="City" required />
+          <label htmlFor="">
+            Zip code
+            <input type="text" placeholder="" required />
+          </label>
+          <label htmlFor="">
+            City{" "}
+            <input className="lastname" type="text" placeholder="" required />
+          </label>
         </div>
       </div>
       <div className="displaypay-payment">

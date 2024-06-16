@@ -196,9 +196,6 @@ a {
   transition: filter 0.3s;
 }
 
-.footer-section .socials img:hover {
-}
-
 .footer-bottom {
   margin-top: 20px;
   border-top: 1px solid #444;
@@ -1040,12 +1037,7 @@ a {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  border-bottom: none;
   font-size: 1.3rem;
-}
-
-.city {
-  border-bottom: 1px solid #444;
 }
 
 .lastname {
@@ -1561,9 +1553,6 @@ a {
   .footer-section .socials img {
     width: 34px;
     transition: filter 0.3s;
-  }
-
-  .footer-section .socials img:hover {
   }
 
   .footer-bottom {
@@ -2253,12 +2242,7 @@ a {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    border-bottom: none;
     font-size: 1.1rem;
-  }
-
-  .city {
-    border-bottom: 1px solid #444;
   }
 
   .lastname {
